@@ -17,4 +17,20 @@ public class MakeGreating {
     public String run(Person person) throws Exception {
         return salutation + person.getName();
     }
+    
+    public static void main(String[] args) throws Exception {
+        //Create some arguments
+        Person betty = new Person("Betty");
+        Person bill = new Person("Bill");
+        Person bai = new Person("Bai");
+        
+        //Create the Function and initiate it
+        MakeGreating func = new MakeGreating();
+        func.initiate();
+        
+        //Run the function multiple times
+        System.out.println(func.run(betty));
+        System.out.println(func.run(bill));
+        System.out.println(func.run(bai));
+    }
 }
